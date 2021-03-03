@@ -73,5 +73,10 @@ namespace Pr_3._3_6
                 richTextBox1.Text += Environment.NewLine + "Результат y =" + x.ToString();
             }
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
