@@ -1,0 +1,9 @@
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\bin\Debug\WindowsForm.exe.config
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\bin\Debug\WindowsForm.exe
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\bin\Debug\WindowsForm.pdb
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\obj\Debug\WindowsForm.csprojAssemblyReference.cache
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\obj\Debug\WindowsForm.Form1.resources
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\obj\Debug\WindowsForm.Properties.Resources.resources
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\obj\Debug\WindowsForm.csproj.GenerateResource.cache
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\obj\Debug\WindowsForm.exe
+D:\Documents\uiop\Pr-2\WindowsForm\WindowsForm\obj\Debug\WindowsForm.pdb
