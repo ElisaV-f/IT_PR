@@ -1,0 +1,16 @@
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-2\obj\Debug\Pr-4-.csprojAssemblyReference.cache
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-2\obj\Debug\Pr_4_.Form1.resources
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-2\obj\Debug\Pr_4_.Properties.Resources.resources
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-2\obj\Debug\Pr-4-.csproj.GenerateResource.cache
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-2\obj\Debug\Pr-4-.csproj.CoreCompileInputs.cache
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-2\obj\Debug\Pr_4_2.Form1.resources
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr-4-.csprojAssemblyReference.cache
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr_4_.Form1.resources
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr_4_.Properties.Resources.resources
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr-4-.csproj.GenerateResource.cache
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr-4-.csproj.CoreCompileInputs.cache
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\bin\Debug\Pr-4-.exe.config
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\bin\Debug\Pr-4-.exe
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\bin\Debug\Pr-4-.pdb
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr-4-.exe
+D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr-4-.pdb
