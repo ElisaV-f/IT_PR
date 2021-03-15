@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Pr_4_
+    //Индивидуальное задание номер 2
 {
     public partial class Form1 : Form
     {
