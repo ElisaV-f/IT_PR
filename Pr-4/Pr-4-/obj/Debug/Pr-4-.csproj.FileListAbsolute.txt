@@ -14,3 +14,12 @@ D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Инфо
 D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\bin\Debug\Pr-4-.pdb
 D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr-4-.exe
 D:\Users\My ASUS\Documents\Институт\2 курс\2 семестр\Информационные технологии\Pr-4\Pr-4-\obj\Debug\Pr-4-.pdb
+D:\Documents\IT_PR\Pr-4\Pr-4-\obj\Debug\Pr-4-.csprojAssemblyReference.cache
+D:\Documents\IT_PR\Pr-4\Pr-4-\obj\Debug\Pr_4_.Form1.resources
+D:\Documents\IT_PR\Pr-4\Pr-4-\obj\Debug\Pr_4_.Properties.Resources.resources
+D:\Documents\IT_PR\Pr-4\Pr-4-\obj\Debug\Pr-4-.csproj.GenerateResource.cache
+D:\Documents\IT_PR\Pr-4\Pr-4-\obj\Debug\Pr-4-.exe
+D:\Documents\IT_PR\Pr-4\Pr-4-\obj\Debug\Pr-4-.pdb
+D:\Documents\IT_PR\Pr-4\Pr-4-\bin\Debug\Pr-4-.exe.config
+D:\Documents\IT_PR\Pr-4\Pr-4-\bin\Debug\Pr-4-.exe
+D:\Documents\IT_PR\Pr-4\Pr-4-\bin\Debug\Pr-4-.pdb

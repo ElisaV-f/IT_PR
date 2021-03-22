@@ -26,51 +26,51 @@ namespace Pr_3._3_6
             {
                 if (x > 5)
                 {
-                    y = Math.Cos(x);
+                    y = Math.Cosh(x);
                 }
                 if ((x > 2) && (x <= 5))
                 {
-                    y = 0.5 * Math.Cos(x);
+                    y = 0.5 * Math.Cosh(x);
                 }
                 if (x <= 2)
                 {
                     y = -1;
                 }
-                richTextBox1.Text += Environment.NewLine + "Результат y =" + x.ToString();
+                richTextBox1.Text += Environment.NewLine + "Результат y =" + y.ToString();
             }
 
             if (radioButton2.Checked)
             {
                 if (x > 5)
                 {
-                    y = Math.Cos(x);
+                    y = Math.Cosh(x);
                 }
                 if ((x > 2) && (x <= 5))
                 {
-                    y = 0.5 * Math.Cos(x);
+                    y = 0.5 * Math.Cosh(x);
                 }
                 if (x <= 2)
                 {
                     y = -1;
                 }
-                richTextBox1.Text += Environment.NewLine + "Результат y =" + x.ToString();
+                richTextBox1.Text += Environment.NewLine + "Результат y =" + y.ToString();
             }
 
             if (radioButton3.Checked)
             {
                 if (x > 5)
                 {
-                    y = Math.Cos(x);
+                    y = Math.Cosh(x);
                 }
                 if ((x > 2) && (x <= 5))
                 {
-                    y = 0.5 * Math.Cos(x);
+                    y = 0.5 * Math.Cosh(x);
                 }
                 if (x <= 2)
                 {
                     y = -1;
                 }
-                richTextBox1.Text += Environment.NewLine + "Результат y =" + x.ToString();
+                richTextBox1.Text += Environment.NewLine + "Результат y =" + y.ToString();
             }
         }
 
@@ -78,5 +78,7 @@ namespace Pr_3._3_6
         {
 
         }
+
+       
     }
 }

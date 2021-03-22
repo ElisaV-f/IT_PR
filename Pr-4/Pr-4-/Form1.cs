@@ -18,25 +18,7 @@ namespace Pr_4_
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -52,7 +34,7 @@ namespace Pr_4_
                 richTextBox1.Text += "Произведение ряда равно " + res.ToString() + "\n";
             }
         }
-        static int Fact(int x)
+       static int Fact(int x)
         {
             if (x == 0)
             {
@@ -107,6 +89,8 @@ namespace Pr_4_
             }
             return sum;
         }
+
+        
     }
 }
     
