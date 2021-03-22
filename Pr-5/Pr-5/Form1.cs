@@ -18,21 +18,21 @@ namespace PR_5
     }
     //1.	Подсчитать, сколько раз среди символов заданной строки встречается буква «а».
     private void button1_Click(object sender, EventArgs e)
-        {
-      
-        // Получаем номер выделенной строки
-        int index = listBox1.SelectedIndex;
-        // Считываем строку в перменную str
-        string str = (string)listBox1.Items[index];
-        // Узнаем количество символов в строке
-        int len = str.Length;
-        // Считаем, что количество пробелов равно 0
-        int count = 0;
-        // Устанавливаем счетчик символов в 0
-        int i = 0;
-        //Организуем цикл перебора всех символов в строке
-        while (i < len - 1)
-        {
+    {
+
+      // Получаем номер выделенной строки
+      int index = listBox1.SelectedIndex;
+      // Считываем строку в перменную str
+      string str = (string)listBox1.Items[index];
+      // Узнаем количество символов в строке
+      int len = str.Length;
+      // Считаем, что количество пробелов равно 0
+      int count = 0;
+      // Устанавливаем счетчик символов в 0
+      int i = 0;
+      //Организуем цикл перебора всех символов в строке
+      while (i < len - 1)
+      {
         // Если нашли пробел, то увеличиваем
         // счетчик пробелов на 1
         if (str[i] == 'а')
@@ -42,12 +42,9 @@ namespace PR_5
       label1.Text = "Символов А в строке = " + count.ToString();
     }
 
+
+
     //14.	Подсчитать, сколько раз встречается в тексте заданный фрагмент.
-
-
-    
-
-
     private void index_string_Click(object sender, EventArgs e)
     {
 
@@ -61,8 +58,6 @@ namespace PR_5
         // Считаем, что количество пробелов равно 0
         int count = 0;
         // Устанавливаем счетчик символов в 0
-        int i = 0;
-        //Организуем цикл перебора всех символов в строке
 
         string str_textbox = textBox1.Text;
         int index_string = 0;
@@ -72,39 +67,24 @@ namespace PR_5
         }
         else MessageBox.Show("Select string, sir");
         Console.WriteLine(index_string);
-
-     
-
-        
-          char[] string_to_char = new char[index_string];
-
-          for (int index_for_char = 0; index_for_char <= index_string; index_for_char++)
-          {
-          string_to_char = str.ToCharArray();
-          
-          }
-        
-
-        
-
-
-
-       
-        label2.Text = "Заданный фрагмент встречается = " + count.ToString() + "раз";
-      }
-     
-  
-
-    }
-
-    private void textBox1_TextChanged(object sender, EventArgs e)
-    {
-
-    }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        string stringfortextbox = textBox1.Text;
+        char[] chardfortextbox = new char[stringfortextbox.Length];
+        for (int i = 0; i < stringfortextbox.Length; i++)
         {
+          chardfortextbox[i] = stringfortextbox[i];
+        }
+        char[] string_to_char = new char[index_string];
+        for (int index_for_char = 0; index_for_char <= index_string; index_for_char++)
+        {
+          string_to_char = str.ToCharArray();
+
+          if (chardfortextbox[] = string_to_char[])
+            count++;
+          Console.WriteLine(count);
 
         }
+        label2.Text = "Заданный фрагмент встречается = " + count.ToString() + "раз";
+      }
     }
+  }
 }

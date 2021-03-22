@@ -59,7 +59,7 @@
       this.listBox1.Name = "listBox1";
       this.listBox1.Size = new System.Drawing.Size(332, 251);
       this.listBox1.TabIndex = 2;
-      this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+     
       // 
       // label1
       // 
@@ -85,7 +85,7 @@
       this.textBox1.Name = "textBox1";
       this.textBox1.Size = new System.Drawing.Size(100, 20);
       this.textBox1.TabIndex = 6;
-      this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+ 
       // 
       // label3
       // 
