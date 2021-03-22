@@ -83,7 +83,7 @@ namespace PR_5
           string_to_char = str.ToCharArray();
           
           }
-        //        char[] string_vveli = new char[];
+        
 
         
 
@@ -101,5 +101,10 @@ namespace PR_5
     {
 
     }
-  }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
