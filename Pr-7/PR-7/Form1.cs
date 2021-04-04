@@ -79,7 +79,5 @@ namespace PR_7
       }
       return result;
     }
-
-    
   }
 }
