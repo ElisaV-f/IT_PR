@@ -16,7 +16,6 @@ namespace PR_7
     {
       InitializeComponent();
     }
-
     private void button1_Click(object sender, EventArgs e)
     {
       dataGridView1.RowCount = 5;
@@ -49,8 +48,7 @@ namespace PR_7
         if (minV[i] > minmin) minmin = minV[i];
       }
       textBox1.Text = Convert.ToString(minmin);
-      double fa = GetDetermin(massive);
-      textBox2.Text = Convert.ToString(fa);
+      double fa = GetDetermin(massive); 
     }
     static public double GetDetermin(double[,] matrix)
     {
@@ -81,5 +79,7 @@ namespace PR_7
       }
       return result;
     }
+
+    
   }
 }

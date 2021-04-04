@@ -29,13 +29,23 @@ namespace PR_8
     /// </summary>
     private void InitializeComponent()
     {
+      this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
       this.SuspendLayout();
+      // 
+      // vScrollBar1
+      // 
+      this.vScrollBar1.Location = new System.Drawing.Point(770, 9);
+      this.vScrollBar1.Name = "vScrollBar1";
+      this.vScrollBar1.Size = new System.Drawing.Size(21, 70);
+      this.vScrollBar1.TabIndex = 0;
+      this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll_1);
       // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(800, 450);
+      this.Controls.Add(this.vScrollBar1);
       this.Name = "Form1";
       this.Text = "Form1";
       this.Load += new System.EventHandler(this.Form1_Load);
@@ -44,6 +54,8 @@ namespace PR_8
     }
 
     #endregion
+
+    private System.Windows.Forms.VScrollBar vScrollBar1;
   }
 }
 

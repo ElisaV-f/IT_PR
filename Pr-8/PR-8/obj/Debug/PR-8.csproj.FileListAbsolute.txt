@@ -1,0 +1,10 @@
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\bin\Debug\PR-8.exe.config
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\bin\Debug\PR-8.exe
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\bin\Debug\PR-8.pdb
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\obj\Debug\PR-8.csprojAssemblyReference.cache
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\obj\Debug\PR_8.Form1.resources
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\obj\Debug\PR_8.Properties.Resources.resources
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\obj\Debug\PR-8.csproj.GenerateResource.cache
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\obj\Debug\PR-8.csproj.CoreCompileInputs.cache
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\obj\Debug\PR-8.exe
+D:\Users\My ASUS\Documents\GitHub\IT_PR\Pr-8\PR-8\obj\Debug\PR-8.pdb

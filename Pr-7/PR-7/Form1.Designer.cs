@@ -30,15 +30,14 @@ namespace PR_7
     private void InitializeComponent()
     {
       this.dataGridView1 = new System.Windows.Forms.DataGridView();
+      this.button1 = new System.Windows.Forms.Button();
+      this.label1 = new System.Windows.Forms.Label();
+      this.textBox1 = new System.Windows.Forms.TextBox();
       this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.button1 = new System.Windows.Forms.Button();
-      this.label1 = new System.Windows.Forms.Label();
-      this.textBox1 = new System.Windows.Forms.TextBox();
-      this.label2 = new System.Windows.Forms.Label();
-      this.textBox2 = new System.Windows.Forms.TextBox();
+      this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       this.SuspendLayout();
       // 
@@ -49,13 +48,41 @@ namespace PR_7
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4});
+            this.Column4,
+            this.Column5});
       this.dataGridView1.Location = new System.Drawing.Point(13, 13);
       this.dataGridView1.Name = "dataGridView1";
       this.dataGridView1.RowHeadersWidth = 51;
       this.dataGridView1.RowTemplate.Height = 24;
       this.dataGridView1.Size = new System.Drawing.Size(900, 396);
       this.dataGridView1.TabIndex = 0;
+      
+      // 
+      // button1
+      // 
+      this.button1.Location = new System.Drawing.Point(89, 434);
+      this.button1.Name = "button1";
+      this.button1.Size = new System.Drawing.Size(177, 23);
+      this.button1.TabIndex = 1;
+      this.button1.Text = "Заполнение массива";
+      this.button1.UseVisualStyleBackColor = true;
+      this.button1.Click += new System.EventHandler(this.button1_Click);
+      // 
+      // label1
+      // 
+      this.label1.AutoSize = true;
+      this.label1.Location = new System.Drawing.Point(524, 449);
+      this.label1.Name = "label1";
+      this.label1.Size = new System.Drawing.Size(80, 17);
+      this.label1.TabIndex = 2;
+      this.label1.Text = "Результат:";
+      // 
+      // textBox1
+      // 
+      this.textBox1.Location = new System.Drawing.Point(610, 449);
+      this.textBox1.Name = "textBox1";
+      this.textBox1.Size = new System.Drawing.Size(100, 22);
+      this.textBox1.TabIndex = 3;
       // 
       // Column1
       // 
@@ -85,61 +112,25 @@ namespace PR_7
       this.Column4.Name = "Column4";
       this.Column4.Width = 125;
       // 
-      // button1
+      // Column5
       // 
-      this.button1.Location = new System.Drawing.Point(89, 415);
-      this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(177, 23);
-      this.button1.TabIndex = 1;
-      this.button1.Text = "Заполнение массива";
-      this.button1.UseVisualStyleBackColor = true;
-      this.button1.Click += new System.EventHandler(this.button1_Click);
-      // 
-      // label1
-      // 
-      this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(524, 415);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(80, 17);
-      this.label1.TabIndex = 2;
-      this.label1.Text = "Результат:";
-      // 
-      // textBox1
-      // 
-      this.textBox1.Location = new System.Drawing.Point(607, 415);
-      this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(100, 22);
-      this.textBox1.TabIndex = 3;
-      // 
-      // label2
-      // 
-      this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(437, 463);
-      this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(171, 17);
-      this.label2.TabIndex = 4;
-      this.label2.Text = "Определитель матрицы:";
-      // 
-      // textBox2
-      // 
-      this.textBox2.Location = new System.Drawing.Point(610, 460);
-      this.textBox2.Name = "textBox2";
-      this.textBox2.Size = new System.Drawing.Size(100, 22);
-      this.textBox2.TabIndex = 5;
+      this.Column5.HeaderText = "Column5";
+      this.Column5.MinimumWidth = 6;
+      this.Column5.Name = "Column5";
+      this.Column5.Width = 125;
       // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(934, 519);
-      this.Controls.Add(this.textBox2);
-      this.Controls.Add(this.label2);
       this.Controls.Add(this.textBox1);
       this.Controls.Add(this.label1);
       this.Controls.Add(this.button1);
       this.Controls.Add(this.dataGridView1);
       this.Name = "Form1";
       this.Text = "Form1";
+      
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
@@ -149,15 +140,14 @@ namespace PR_7
     #endregion
 
     private System.Windows.Forms.DataGridView dataGridView1;
+    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.TextBox textBox1;
     private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-    private System.Windows.Forms.Button button1;
-    private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.TextBox textBox2;
+    private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
   }
 }
 
