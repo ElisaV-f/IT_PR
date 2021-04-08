@@ -29,40 +29,31 @@ namespace PR_9
     /// </summary>
     private void InitializeComponent()
     {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
       this.button1 = new System.Windows.Forms.Button();
-      this.pictureBox1 = new System.Windows.Forms.PictureBox();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.SuspendLayout();
       // 
       // button1
       // 
-      this.button1.Location = new System.Drawing.Point(862, 484);
+      this.button1.BackColor = System.Drawing.Color.Aqua;
+      this.button1.Location = new System.Drawing.Point(1095, 531);
       this.button1.Name = "button1";
       this.button1.Size = new System.Drawing.Size(116, 31);
       this.button1.TabIndex = 0;
       this.button1.Text = "Нарисовать";
-      this.button1.UseVisualStyleBackColor = true;
+      this.button1.UseVisualStyleBackColor = false;
       this.button1.Click += new System.EventHandler(this.button1_Click);
-      // 
-      // pictureBox1
-      // 
-      this.pictureBox1.Location = new System.Drawing.Point(89, 12);
-      this.pictureBox1.Name = "pictureBox1";
-      this.pictureBox1.Size = new System.Drawing.Size(695, 525);
-      this.pictureBox1.TabIndex = 1;
-      this.pictureBox1.TabStop = false;
       // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1002, 527);
-      this.Controls.Add(this.pictureBox1);
+      this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+      this.ClientSize = new System.Drawing.Size(1223, 574);
       this.Controls.Add(this.button1);
       this.Name = "Form1";
       this.Text = "Form1";
       this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
       this.ResumeLayout(false);
 
     }
@@ -70,7 +61,6 @@ namespace PR_9
     #endregion
 
     private System.Windows.Forms.Button button1;
-    private System.Windows.Forms.PictureBox pictureBox1;
   }
 }
 

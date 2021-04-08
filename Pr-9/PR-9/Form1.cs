@@ -12,31 +12,77 @@ namespace PR_9
 {
   public partial class Form1 : Form
   {
-    Point[] points = new Point[50];
-    Pen pen = new Pen(Color.Black, 2);
-
-
     public Form1()
     {
       InitializeComponent();
     }
-   
-
-
+    bool flag = false;
+    int y1 = 160;
+    int y2 = 38;
     private void Form1_Paint(object sender, PaintEventArgs e)
     {
 
-      Graphics g = e.Graphics; // Объявляется объект Graphics   
-                               // Далее вставляется код рисования
-      g.DrawLines(pen, points);
+      //Graphics g = e.Graphics; // Объявляется объект Graphics   
+      // Далее вставляется код рисования
+      Pen blackPen = new Pen(Color.Black, 3);
+      Graphics painting = e.Graphics;
+      painting.Clear(Color.White);
+      SolidBrush blueBrush = new SolidBrush(Color.LightSkyBlue);
+      Rectangle rect = new Rectangle(10, 10, 500, 500);
+      e.Graphics.FillRectangle(blueBrush, rect);
+      SolidBrush sunBrush = new SolidBrush(Color.Yellow);
+      Rectangle r = new Rectangle(40, 40, 75, 75);
+      e.Graphics.FillEllipse(sunBrush, r);
+      SolidBrush brownBrush = new SolidBrush(Color.SaddleBrown);
+      Rectangle houseNew = new Rectangle(150, 310, 200, 200);
+      e.Graphics.DrawRectangle(blackPen, 150, 310, 200, 200);
+      e.Graphics.FillRectangle(brownBrush, houseNew);
+      Point point1 = new Point(250, 180);
+      Point point2 = new Point(150, 310);
+      Point point3 = new Point(350, 310);
+      Point[] curvePoints = { point1, point2, point3 };
+      e.Graphics.DrawPolygon(blackPen, curvePoints);
+      e.Graphics.FillPolygon(brownBrush, curvePoints);
+      SolidBrush windowBrush = new SolidBrush(Color.LightGray);
+      Rectangle newWindow = new Rectangle(200, 350, 100, 100);
+      e.Graphics.DrawRectangle(blackPen, 200, 350, 100, 100);
+      e.Graphics.FillRectangle(windowBrush, newWindow);
+      e.Graphics.DrawLine(blackPen, 250, 350, 250, 450);
+      e.Graphics.DrawLine(blackPen, 200, 400, 300, 400);
+      Point newTruba1 = new Point(270, 202);
+      Point newTruba2 = new Point(300, 240);
+      Point newTruba3 = new Point(270, 180);
+      Point newTruba4 = new Point(300, 180);
+      SolidBrush grayBrush = new SolidBrush(Color.Gray);
+      Point[] truba = { newTruba1, newTruba2, newTruba4, newTruba3 };
+      e.Graphics.DrawPolygon(blackPen, truba);
+      e.Graphics.FillPolygon(grayBrush, truba);
 
     }
 
     private void button1_Click(object sender, EventArgs e)
     {
       //this.BackgroundImage = Image.FromFile(@"Pictures/summer-again.jpg");
-      pictureBox1.Image = Image.FromFile("D:/Users/My ASUS/Pictures/Camera Roll/Sunflowers_Sunrises_and_sunsets_Sky_Fields_Sun_590818_600x400.jpg");
+      
+      SolidBrush grayBrush = new SolidBrush(Color.Gray);
+      Pen blackPen = new Pen(Color.Black, 3);
+      if (flag != true)
+      {
+        Rectangle makeSmoke = new Rectangle(268, 160, 35, 38);
+        float startAngle = 0.0F;
+        float sweepAngle = -180.0F;
+        this.CreateGraphics().FillPie(grayBrush, makeSmoke, startAngle, sweepAngle);
+        flag = true;
+      }
+      else
+      {
+        y1 -= 20;
+        Rectangle makeSmoke1 = new Rectangle(268, y1, 35, y2);
+        this.CreateGraphics().FillEllipse(grayBrush, makeSmoke1);
+      }
+      //  pictureBox1.Image = Image.FromFile("D:/Users/My ASUS/Pictures/Camera Roll/Sunflowers_Sunrises_and_sunsets_Sky_Fields_Sun_590818_600x400.jpg");
+
     }
   }
- }
+}
 
