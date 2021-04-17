@@ -17,72 +17,55 @@ namespace PR_9
       InitializeComponent();
     }
     bool flag = false;
-    int y1 = 160;
-    int y2 = 38;
+    int x1 = 160;
+    int x3 = 38;
     private void Form1_Paint(object sender, PaintEventArgs e)
     {
-
-      //Graphics g = e.Graphics; // Объявляется объект Graphics   
-      // Далее вставляется код рисования
-      Pen blackPen = new Pen(Color.Black, 3);
-      Graphics painting = e.Graphics;
-      painting.Clear(Color.White);
-      SolidBrush blueBrush = new SolidBrush(Color.LightSkyBlue);
-      Rectangle rect = new Rectangle(10, 10, 500, 500);
-      e.Graphics.FillRectangle(blueBrush, rect);
-      SolidBrush sunBrush = new SolidBrush(Color.Yellow);
-      Rectangle r = new Rectangle(40, 40, 75, 75);
-      e.Graphics.FillEllipse(sunBrush, r);
-      SolidBrush brownBrush = new SolidBrush(Color.SaddleBrown);
-      Rectangle houseNew = new Rectangle(150, 310, 200, 200);
-      e.Graphics.DrawRectangle(blackPen, 150, 310, 200, 200);
-      e.Graphics.FillRectangle(brownBrush, houseNew);
-      Point point1 = new Point(250, 180);
-      Point point2 = new Point(150, 310);
-      Point point3 = new Point(350, 310);
-      Point[] curvePoints = { point1, point2, point3 };
-      e.Graphics.DrawPolygon(blackPen, curvePoints);
-      e.Graphics.FillPolygon(brownBrush, curvePoints);
-      SolidBrush windowBrush = new SolidBrush(Color.LightGray);
-      Rectangle newWindow = new Rectangle(200, 350, 100, 100);
-      e.Graphics.DrawRectangle(blackPen, 200, 350, 100, 100);
-      e.Graphics.FillRectangle(windowBrush, newWindow);
-      e.Graphics.DrawLine(blackPen, 250, 350, 250, 450);
-      e.Graphics.DrawLine(blackPen, 200, 400, 300, 400);
-      Point newTruba1 = new Point(270, 202);
-      Point newTruba2 = new Point(300, 240);
-      Point newTruba3 = new Point(270, 180);
-      Point newTruba4 = new Point(300, 180);
-      SolidBrush grayBrush = new SolidBrush(Color.Gray);
-      Point[] truba = { newTruba1, newTruba2, newTruba4, newTruba3 };
-      e.Graphics.DrawPolygon(blackPen, truba);
-      e.Graphics.FillPolygon(grayBrush, truba);
-
+      Graphics g = e.Graphics;
+      g.Clear(Color.LightBlue);
+      // Создаем объекты-кисти для закрашивания фигур
+      SolidBrush myCorp = new SolidBrush(Color.Black);
+      SolidBrush myTrum = new SolidBrush(Color.DarkBlue);
+      SolidBrush myTrub = new SolidBrush(Color.Gray);
+      //Выбираем перо myPen желтого цвета толщиной в 2 пикселя:
+      Pen myWind = new Pen(Color.White, 4);
+      // Закрашиваем фигуры
+      g.FillRectangle(myTrub, 300, 125, 75, 75); // 1 труба (прямоугольник)
+      g.FillRectangle(myTrub, 480, 125, 75, 75); // 2 труба (прямоугольник)
+      g.FillPolygon(myCorp, new Point[]      // корпус (трапеция)
+        {
+          new Point(100,300),new Point(700,300),
+          new Point(700,300),new Point(600,400),
+          new Point(600,400),new Point(200,400),
+          new Point(200,400),new Point(100,300)
+        }
+      );
+      g.FillRectangle(myTrum, 250, 200, 350, 100); // палуба (прямоугольник)
+      // Иллюминаторы 
+      for (int y = 300; y <= 550; y += 50)
+      {
+        g.DrawEllipse(myWind, y, 240, 20, 20); // 6 окружностей
+      }
     }
 
     private void button1_Click(object sender, EventArgs e)
     {
-      //this.BackgroundImage = Image.FromFile(@"Pictures/summer-again.jpg");
-      
-      SolidBrush grayBrush = new SolidBrush(Color.Gray);
-      Pen blackPen = new Pen(Color.Black, 3);
+      //this.BackgroundImage = Image.FromFile(@"C:\Users\student\Pictures\black-sea_obl.jpg");
+      SolidBrush grayBrush = new SolidBrush(Color.Blue);
+      Pen blackPen = new Pen(Color.Blue, 4);
       if (flag != true)
       {
-        Rectangle makeSmoke = new Rectangle(268, 160, 35, 38);
-        float startAngle = 0.0F;
-        float sweepAngle = -180.0F;
-        this.CreateGraphics().FillPie(grayBrush, makeSmoke, startAngle, sweepAngle);
+        Rectangle makeSmoke = new Rectangle(150, 380, 50, 40);
+
+        this.CreateGraphics().FillEllipse(grayBrush, makeSmoke);
         flag = true;
       }
       else
       {
-        y1 -= 20;
-        Rectangle makeSmoke1 = new Rectangle(268, y1, 35, y2);
+        x1 += 20;
+        Rectangle makeSmoke1 = new Rectangle(x1, 380, x3, 40);
         this.CreateGraphics().FillEllipse(grayBrush, makeSmoke1);
       }
-      //  pictureBox1.Image = Image.FromFile("D:/Users/My ASUS/Pictures/Camera Roll/Sunflowers_Sunrises_and_sunsets_Sky_Fields_Sun_590818_600x400.jpg");
-
     }
   }
 }
-
