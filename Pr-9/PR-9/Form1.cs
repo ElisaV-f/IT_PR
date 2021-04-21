@@ -47,7 +47,6 @@ namespace PR_9
         g.DrawEllipse(myWind, y, 240, 20, 20); // 6 окружностей
       }
     }
-
     private void button1_Click(object sender, EventArgs e)
     {
       //this.BackgroundImage = Image.FromFile(@"C:\Users\student\Pictures\black-sea_obl.jpg");

@@ -35,9 +35,10 @@ namespace PR_9
       // button1
       // 
       this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
-      this.button1.Location = new System.Drawing.Point(1095, 531);
+      this.button1.Location = new System.Drawing.Point(821, 431);
+      this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(116, 31);
+      this.button1.Size = new System.Drawing.Size(87, 25);
       this.button1.TabIndex = 0;
       this.button1.Text = "Нарисовать";
       this.button1.UseVisualStyleBackColor = false;
@@ -45,12 +46,14 @@ namespace PR_9
       // 
       // Form1
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1223, 574);
+      this.ClientSize = new System.Drawing.Size(917, 466);
       this.Controls.Add(this.button1);
+      this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
       this.Name = "Form1";
       this.Text = "Form1";
+     
       this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
       this.ResumeLayout(false);
 
